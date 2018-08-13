@@ -1,0 +1,154 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: '微軟正黑體', 'Roboto', sans-serif;
+  background-color: #fdfbf0;
+}
+
+h1,
+h2 {
+  font-family: '微軟正黑體', 'Roboto', sans-serif;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0px;
+  width: 100%;
+  clear: both;
+}
+
+.app {
+  text-align: center;
+}
+
+.typeTxt {
+  margin: 40px auto 30px;
+  height: 50px;
+}
+
+.typeTxt span {
+  display: inline-block;
+  cursor: pointer;
+  width: 60px;
+  font-size: 18px;
+  background-color: rgba(19, 81, 153, 0.8);
+  color: #fff;
+}
+
+.typeTxt span:hover {
+  background-color: #135199;
+}
+
+.inputArea {
+  font-size: 20px;
+  font-family: '微軟正黑體', 'Roboto', sans-serif;
+}
+
+.active {
+  text-decoration: line-through;
+  color: #9B9B9B;
+}
+
+.tab {
+  width: 960px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tabLinks {
+  display: block;
+  width: 33.333333%;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #4A90E2;
+  color: #00408B;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+}
+
+.tab .tabActive {
+  color: #fff;
+  border-bottom: 5px solid #00408B;
+}
+
+.tabLinks:hover {
+  color: #fff;
+  border-bottom: 5px solid #00408B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.tabContent {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #E1E1E1;
+  padding: 1% 2%;
+  font-size: 20px;
+}
+
+#completedList {
+  color: #7e6c6c;
+  font-style: italic;
+}
+
+#completedList .eachItem {
+  background-color: #FFF2DC;
+}
+
+#inProcess {
+  color: #e43a5f;
+}
+
+.eachItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  background-color: #F2F2F2;
+  margin: 15px 0;
+}
+
+.checkBtn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.showTxt {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  text-align: left;
+}
+
+.delBtn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=todolist.css.map */
