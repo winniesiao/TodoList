@@ -9,12 +9,16 @@ function init() {
         },
         methods: {
             addTodo: function(todo) {
-                this.todos.push({
-                        content: todo,
-                        completed: false
-                    })
-                    // console.log(todo);
-                this.newTodo = '';
+                if (this.newTodo != '') {
+                    this.todos.push({
+                            content: todo,
+                            completed: false
+                        })
+                        // console.log(todo);
+                    this.newTodo = '';
+                } else {
+                    alert('請輸入待辦事項喔！');
+                }
             },
             removeTodo: function(todo) {
                 this.todos.splice(this.todos.indexOf(todo), 1)
